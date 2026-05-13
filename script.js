@@ -271,9 +271,6 @@ document.getElementById("connectButton");
 const playButton =
 document.getElementById("playButton");
 
-const jumpButton =
-document.getElementById("jumpButton");
-
 const walletAddressText =
 document.getElementById("walletAddress");
 
@@ -609,9 +606,12 @@ document.addEventListener(
     }
 );
 
-jumpButton.addEventListener(
-    "click",
-    jump
+canvas.addEventListener(
+    "touchstart",
+    () => {
+
+        jump();
+    }
 );
 
 // END GAME
