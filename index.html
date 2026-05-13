@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TRex Runner</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TRex Runner</h1>
+
+        <button id="connectButton">
+            Connect MetaMask
+        </button>
+
+        <button id="playButton" disabled>
+            Pay 0.001 ETH & Play
+        </button>
+
+        <p id="walletAddress">
+            Wallet: Not Connected
+        </p>
+
+        <p id="status">
+            Status: Waiting
+        </p>
+
+        <h2 id="scoreDisplay">
+            Score: 0
+        </h2>
+
+        <canvas id="gameCanvas"
+                width="900"
+                height="300">
+        </canvas>
+<button id="jumpButton">
+    JUMP
+</button>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
